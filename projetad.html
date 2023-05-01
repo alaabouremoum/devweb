@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gestmembre.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="projetad.css">
+    <title>Gestion des membres</title>
+</head>
+<body>
+    <a href="adminprincipal.html"><img src="LEDSI.png" alt=""height="80rem" id="logo"></a>
+    <p id="Administrateurp">Administrateur</p>
+    <nav class="navbar" id="navbar">
+        <ul class="nav-menu">
+          <li class="home" id="hm"><a href="adminprincipal.html"><img src="icons8-home-32.png" alt=""></a></li>
+          <li class="nav-item" id="pr"><a href="gestmembre.html">Gestion des membres</a></li>
+          <li class="nav-item" id="er"><a href="#er">Gestion des Equipes</a></li>
+          <li class="nav-item" id="pe"><a href="#pe">Gestion des Publications et Evenements Scientifiques</a>
+          <ul  class="Publication-et-Evenements">
+            <li class="Subnav-item" id="pc"><a href="#pc">Gestion de Publication et communication</a></li>
+            <li class="Subnav-item" id="tm"><a href="#tm">Gestion Theses et Memoires</a></li>
+            <li class="Subnav-item" id="es"><a href="#es">Gestions Evenements Scientifiques</a></li>
+          </ul>
+          </li>
+          <li class="nav-item" id="pj"><a href="#Pj">Gestion des Projets</a>
+          <ul class="Projets">
+            <li class="Subnav-item" id="na"><a href="#na">Gestion des Projets Nationaux</a></li>
+            <li class="Subnav-item" id="in"><a href="#in">Gestion des Projets Internationaux</a></li>
+          </ul>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="gest-mmbr">
+
+        <label for="title" class="placeholder">Titre</label><br>
+        <input type="text" class="input" placeholder="  ">
+
+        <br>  <br> 
+        <label for="type" class="placeholder">TYPE </label><br>
+        <select name="type" id="type">
+            <option value="na">NATIONAl</option>
+            <option value="in">INTERNATIONAL</option>
+        </select>
+        <br><br>
+        <label for="res" class="placeholder">respensables</label>
+        <label for="type" class="placeholder">TYPE </label><br>
+        <select name="type" id="type">
+            <option value="na">PR</option>
+            <option value="in">DOC</option>
+        </select>
+        <input type="text" class="input" placeholder=" Pr. ">
+
+        <br>  <br> 
+        <label for="misson" class="placeholder">Maission</label><br>
+        <textarea name="misson"  cols="60" rows="10" class="input"></textarea>
+    
+        <br><br>
+        <label for="type" class="placeholder">LA DATE DE PROJET</label>
+        <br>
+        <input type="date" name="date" class="input">
+        <br><br>
+        
+        <button type="button">ajouter</button>
+        &nbsp;&nbsp;&nbsp;
+        <button type="button">modifier</button>
+        &nbsp;&nbsp;&nbsp;
+        <button type="button">supprimer</button>
+      </div>
+    
+      <footer class="footer">
+        <div class="container">
+          <img src="logo.png" alt="" height="92px" width="92px" class="logosite">
+          <img src="univ logo.png" alt=""height="128px" width="148px" class="logouniv">
+          <div class="footer-info">
+          <h3>Tel : +213 (0)25 27 24 36</h3>
+          <h3>Adresse : BP 270, Route de Soumâa 09100 - Blida - Algérie</h3>
+          <h3>Mail : lrdsi@univ-blida.dz</h3>
+          </div>
+          <p class="footer-text">© 2020 LRDSI. All rights reserved.</p>         </div>
+      </footer>
+</body>
+</html>

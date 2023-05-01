@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="LRDSIPRINCIPAL.CSS">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="prencipal.css">
+<link rel="stylesheet" href="navbar1.css">
+    <title>LRDSI PRINCIPALE</title>
+</head>
+<body>
+  <!-- debut -->
+    <a href="LRDSIPRINCIPAL.html"><img src="LEDSI.png" alt=""height="80rem" id="logo"></a>
+    <nav class="navbar" id="navbar">
+        <ul class="nav-menu">
+          <li class="home" id="hm"><a href="LRDSIPRINCIPAL.html"><img src="icons8-home-32.png" alt=""></a></li>
+          <li class="nav-item" id="pr"><a href="Presentation.html">Presentation</a></li>
+          <li class="nav-item" id="er"><a href="#er">Equipe de Recherche</a></li>
+          <li class="nav-item" id="pe"><a href="#pe">Publication et Evenements</a>
+          <ul  class="Publication-et-Evenements">
+            <li class="Subnav-item" id="pc"><a href="#pc">Publication et communication</a></li>
+            <li class="Subnav-item" id="tm"><a href="#tm">Theses et Memoires</a></li>
+            <li class="Subnav-item" id="es"><a href="#es">Evenements Scientifiques</a></li>
+          </ul>
+          </li>
+          <li class="nav-item" id="pj"><a href="#Pj">Projets</a>
+          <ul class="Projets">
+            <li class="Subnav-item" id="na"><a href="#na">Projets Nationaux</a></li>
+            <li class="Subnav-item" id="in"><a href="#in">Projets Internationaux</a></li>
+          </ul>
+          </li>
+          <li class="nav-item" id="cn"><a href="#cn">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="breadcrumb" id="breadcrumb">
+        <ul>
+          <li id="breadcrumb-home"><a href="LRDSIPRINCIPAL.html">Acceuil</a></li>
+          <li id="breadcrumb-presentation"><a href="#pr">Presentation</a></li>
+          <li id="breadcrumb-equipe"><a href="#er">Equipe de Recherche</a></li>
+          <li id="breadcrumb-publication"><a href="#pe">Publication et Evenements</a></li>
+          <li id="breadcrumb-communication"><a href="#pc">Publication et communication</a></li>
+          <li id="breadcrumb-theses"><a href="#tm">Theses et Memoires</a></li>
+          <li id="breadcrumb-evenements"><a href="#es">Evenements Scientifiques</a></li>
+          <li id="breadcrumb-projets"><a href="#pj">Projets</a></li>
+          <li id="breadcrumb-nationaux"><a href="#na">Projets Nationaux</a></li>
+          <li id="breadcrumb-internationaux"><a href="#in">Projets Internationaux</a></li>
+          <li id="breadcrumb-contact"><a href="#cn">Contact</a></li>
+          <li>Current Page</li>
+        </ul>
+      </div>
+      <section id="Acceuil">
+        <h1>Acceuil</h1>
+      </section>
+      <section id="Presentation">
+        <h1>Presentation</h1>
+      </section>
+      <section id="Equipe de Recherche">
+        <h1>Equipe de Recherche</h1>
+      </section>
+      <section id="Publication et Evenements">
+        <h1>Publication et Evenements</h1>
+      </section>
+      <section id="Projets">
+        <h1>Projets</h1>
+      </section>
+      <section id="Contact">
+        <h1>Contact</h1>
+       </section>
+       <script>
+        const li=document.querySelectorAll(".id");
+        const sec=document.querySelectorAll("section");
+        function activeMenu(){
+          let len=sec.length;
+          while(--len && window.screenY+97 < sec[len].offsetTop){
+            li.forEach(ltx => ltx.classlist.remove("active"));
+            li[len].classlist.add("active");
+          }
+          activeMenu();
+          window.addEventListener("scroll",activeMenu);
+        }
+       </script>
+       </body>
+       </html> 
+    
